@@ -24,7 +24,7 @@ void exibirTabuleiro(int tabuleiro[TAMANHO_TABULEIRO][TAMANHO_TABULEIRO]) {
     }
 }
 
-// Função para verificar se é possível posicionar o navio sem sair dos limites e sem sobreposição
+// Função para verificar se é possível posicionar o navio sem sair dos limite e sem sobreposição
 int podePosicionar(int tabuleiro[TAMANHO_TABULEIRO][TAMANHO_TABULEIRO], int linha, int coluna, char orientacao) {
     for (int i = 0; i < TAMANHO_NAVIO; i++) {
         int x = linha + (orientacao == 'V' ? i : 0);
